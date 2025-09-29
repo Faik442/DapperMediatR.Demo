@@ -1,16 +1,16 @@
 ﻿using Azure.Core;
 using Dapper;
-using DapperTrial.API.Models;
-using DapperTrial.API.Models.RequestModels;
-using DapperTrial.API.Models.ResponseModels;
-using DapperTrial.API.Services.Product.Queries;
-using DapperTrial.API.Services.Redis;
-using DapperTrial.API.Services.User.Queries;
+using DapperMediatR.Demo.API.Models;
+using DapperMediatR.Demo.API.Models.RequestModels;
+using DapperMediatR.Demo.API.Models.ResponseModels;
+using DapperMediatR.Demo.API.Services.Product.Queries;
+using DapperMediatR.Demo.API.Services.Redis;
+using DapperMediatR.Demo.API.Services.User.Queries;
 using MediatR;
 using System.Data;
 using System.Text.Json;
 
-namespace DapperTrial.API.Services.Cart.Commands
+namespace DapperMediatR.Demo.API.Services.Cart.Commands
 {
     public class AddCartCommand : IRequest<AddCartResponseModel>
     {
@@ -56,7 +56,7 @@ namespace DapperTrial.API.Services.Cart.Commands
             await _dbConnection.ExecuteAsync(cartProductQuery, cartProductParameters);
 
             //User ın get edildiği yer
-            DapperTrial.API.Models.User user = await _mediator.Send(new GetUserByIdQuery() { UserId = req.requestModel.UserId });
+            DapperMediatR.Demo.API.Models.User user = await _mediator.Send(new GetUserByIdQuery() { UserId = req.requestModel.UserId });
 
             var response = new AddCartResponseModel
             {

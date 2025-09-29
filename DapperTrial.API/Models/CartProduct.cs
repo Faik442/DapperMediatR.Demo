@@ -1,4 +1,4 @@
-﻿namespace DapperTrial.API.Models
+﻿namespace DapperMediatR.Demo.API.Models
 {
     public class CartProduct
     {

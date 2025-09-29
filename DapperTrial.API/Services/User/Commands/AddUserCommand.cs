@@ -2,7 +2,7 @@
 using MediatR;
 using System.Data;
 
-namespace DapperTrial.API.Repositories.User.Commands
+namespace DapperMediatR.Demo.API.Repositories.User.Commands
 {
     public class AddUserCommand : IRequest<bool>
     {

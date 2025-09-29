@@ -1,0 +1,6 @@
+@DapperMediatR.Demo.API_HostAddress = http://localhost:5251
+
+GET {{DapperMediatR.Demo.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

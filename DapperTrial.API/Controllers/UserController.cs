@@ -1,11 +1,11 @@
-﻿using DapperTrial.API.Models;
-using DapperTrial.API.Repositories.User.Commands;
-using DapperTrial.API.Services.User.Queries;
+﻿using DapperMediatR.Demo.API.Models;
+using DapperMediatR.Demo.API.Repositories.User.Commands;
+using DapperMediatR.Demo.API.Services.User.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DapperTrial.API.Controllers
+namespace DapperMediatR.Demo.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

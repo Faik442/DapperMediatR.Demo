@@ -1,7 +1,6 @@
-using DapperTrial.API.Services.Redis;
+using DapperMediatR.Demo.API.Services.Redis;
 using FluentMigrator.Runner;
 using MediatR;
-using Microsoft.Extensions.DependencyInjection;
 using Npgsql;
 using StackExchange.Redis;
 using System.Data;
@@ -28,7 +27,7 @@ builder.Services.AddControllers();
 
 //Redis connection
 IConfiguration configuration = builder.Configuration;
-var multiplexer = ConnectionMultiplexer.Connect(configuration.GetConnectionString("Redis"));
+var multiplexer = ConnectionMultiplexer.Connect(configuration.GetConnectionString("Redis")!);
 builder.Services.AddSingleton<IConnectionMultiplexer>(multiplexer);
 
 

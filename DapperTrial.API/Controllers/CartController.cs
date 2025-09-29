@@ -1,11 +1,11 @@
-﻿using DapperTrial.API.Models.RequestModels;
-using DapperTrial.API.Models.ResponseModels;
-using DapperTrial.API.Services.Cart.Commands;
+﻿using DapperMediatR.Demo.API.Models.RequestModels;
+using DapperMediatR.Demo.API.Models.ResponseModels;
+using DapperMediatR.Demo.API.Services.Cart.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DapperTrial.API.Controllers
+namespace DapperMediatR.Demo.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

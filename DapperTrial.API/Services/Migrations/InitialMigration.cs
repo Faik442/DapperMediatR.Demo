@@ -1,6 +1,6 @@
 ﻿using FluentMigrator;
 
-namespace DapperTrial.API.Repositories.Migrations
+namespace DapperMediatR.Demo.API.Repositories.Migrations
 {
     [Migration(20240720, "InitialMigration_V1")]
     public class InitialMigration : Migration

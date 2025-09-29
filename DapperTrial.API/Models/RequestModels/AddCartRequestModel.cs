@@ -1,4 +1,4 @@
-﻿namespace DapperTrial.API.Models.RequestModels
+﻿namespace DapperMediatR.Demo.API.Models.RequestModels
 {
     public class AddCartRequestModel
     {

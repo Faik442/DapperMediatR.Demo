@@ -1,4 +1,4 @@
-﻿namespace DapperTrial.API.Models.ResponseModels
+﻿namespace DapperMediatR.Demo.API.Models.ResponseModels
 {
     public class AddCartResponseModel
     {

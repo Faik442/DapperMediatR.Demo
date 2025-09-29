@@ -1,8 +1,8 @@
-﻿using DapperTrial.API.Models.RequestModels;
+﻿using DapperMediatR.Demo.API.Models.RequestModels;
 using StackExchange.Redis;
 using System.Text.Json;
 
-namespace DapperTrial.API.Services.Redis
+namespace DapperMediatR.Demo.API.Services.Redis
 {
     public static class RedisService
     {
